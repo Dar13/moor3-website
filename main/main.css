@@ -1,0 +1,41 @@
+
+div.work_box_container {
+  display: flex;
+  flex-flow: column nowrap;
+  border-top: thin solid;
+  border-bottom: thin solid;
+  border-left: thin solid;
+  border-right: thin solid;
+}
+
+div.work_box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+div.work_period {
+  display: flex;
+  order: 1;
+  flex: 0 1 auto;
+  min-width: 25%;
+}
+
+div.work_title {
+  display: flex;
+  order: 2;
+  flex: 1 1 auto;
+}
+
+div.work_filler {
+  display: flex;
+  order: 1;
+  flex: 1 1 auto;
+  min-width: 25%; /* Must match div.work_period.min-width */
+}
+
+div.work_desc {
+  display: flex;
+  order: 2;
+  flex: 5 1 auto;
+}
+
