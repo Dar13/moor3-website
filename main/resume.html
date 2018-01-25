@@ -5,19 +5,23 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <header class="header_container">
-      <a href="index.html" class="header_name header_link"><h1 class="header_name">Neil Moore</h1></a>
-      <a href="resume.html" class="header_item header_link" ><p><b>Resume</b></p></a>
-      <a href="projects.html" class="header_item header_link" ><p>Projects</p></a>
-    </header>
-    <main class="generic_main">
-      <div style="text-align:center">
-        <a href="https://github.com/Dar13">GitHub Profile</a>
-        <a href="javascript:window.location.href=atob('bWFpbHRvOm4uYS5tb29yZUBvdXRsb29rLmNvbQ==')">Email</a>
+    <div class="page_layout">
+      <div class="header_container">
+        <div class="header_content">
+          <a href="index.html" class="header_name header_link"><h1 class="header_name">Neil Moore</h1></a>
+          <div style="order:2; flex: 0 0 20%;">
+            <a href="resume.html" class="header_link"><p><b>Resume</b></p></a>
+            <a href="projects.html" class="header_link"><p>Projects</p></a>
+          </div>
+        </div>
       </div>
-      <h2 class="generic_section_title">Summary</h2>
-      <div class="work_box_container">
-        <div class="work_item">
+      <div class="generic_main">
+        <div style="text-align:center">
+          <a href="https://github.com/Dar13">GitHub Profile</a>
+          <a href="javascript:window.location.href=atob('bWFpbHRvOm4uYS5tb29yZUBvdXRsb29rLmNvbQ==')">Email</a>
+        </div>
+        <h2 class="generic_section_title">Summary</h2>
+        <div class="work_box_container">
           <p>Software engineer that isn't afraid to get his hands dirty, as dirty
              as software can get anyways. The lower you go in the software
              stack, the better.</p>
@@ -28,11 +32,9 @@
           <p>Weightlifting and video games are the two main occupiers of my time outside
              work with most of the gaming happening on PC (though there are some notable exceptions).</p>
         </div>
-      </div>
-      <h2 class="generic_section_title">Experience</h2>
-      <!-- Don't forget to update this...(e.g. tenses, etc) -->
-      <div class="work_box_container">
-        <div class="work_item">
+        <h2 class="generic_section_title">Experience</h2>
+        <!-- Don't forget to update this...(e.g. tenses, etc) -->
+        <div class="work_box_container">
           <p><b>June 2016 - Present:</b> Software Engineer, Lockheed Martin Corporation</p>
           <ul>
             <li>Developing a virtualization solution for secure, embedded systems</li>
@@ -40,8 +42,6 @@
               management and build process</li>
             <li>Primary maintainer of multi-core, memory management and virtual CPU emulation within the product</li>
           </ul>
-        </div>
-        <div class="work_item">
           <p><b>Nov 2013 - May 2016:</b> Intern/CWEP Student, Lockheed Martin Corporation</p>
           <ul>
             <li>Used C++/Java to develop internal tools for verification of hardware
@@ -51,18 +51,14 @@
               applications in C99</li>
           </ul>
         </div>
-      </div>
-      <h2 class="generic_section_title">Personal Projects</h2>
-      <div class="work_box_container">
-        <div class="work_item">
+        <h2 class="generic_section_title">Personal Projects</h2>
+        <div class="work_box_container">
           <a href="https://github.com/Dar13/OpenMemDB"><p>OpenMemDB</p></a>
           <ul>
             <li>In-memory, non-blocking, and wait-free SQL database</li>
             <li>Developed in C++11 using the Tervel collection of wait-free data structures</li>
             <li>Was my Senior Design project at UCF</li>
           </ul>
-        </div>
-        <div class="work_item">
           <a href="https://github.com/Dar13/COP4331Project"><p>Over The Rhine</p></a>
           <ul>
             <li>Multiplayer-capable tower defense game for Android</li>
@@ -70,10 +66,8 @@
             <li>Developed in a team of 7 people as part of UCF's COP 4331C</li>
           </ul>
         </div>
-      </div>
-      <h2 class="generic_section_title">Skills</h2>
-      <div class="work_box_container">
-        <div class="work_item">
+        <h2 class="generic_section_title">Skills</h2>
+        <div class="work_box_container">
           <ul>
             <li>Proficient in C99, C++/C++11, x86 Assembly</li>
             <li>Familiar with Java and C#</li>
@@ -83,21 +77,21 @@
             <li>Designing, implementing and debugging multiprocessor algorithms</li>
           </ul>
         </div>
-      </div>
-      <h2 class="generic_section_title">Open Source Contributions</h2>
-      <div class="work_box_container">
-        <div class="work_item">
-          <ul>
-            <li>Minor contributor to the Ethereum project (specifically the C++ implementation of the Ethereum client)</li>
-          </ul>
+        <h2 class="generic_section_title">Open Source Contributions</h2>
+        <div class="work_box_container">
+          <div class="">
+            <ul>
+              <li>Minor contributor to the Ethereum project (specifically the C++ implementation of the Ethereum client)</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="generic_section_title">Education</h2>
+        <div class="work_box_container">
+          <div class="">
+            <p>Computer Science B.S., University of Central Florida, 2016</p>
+          </div>
         </div>
       </div>
-      <h2 class="generic_section_title">Education</h2>
-      <div class="work_box_container">
-        <div class="work_item">
-          <p>Computer Science B.S., University of Central Florida, 2016</p>
-        </div>
-      </div>
-    </main>
+    </div>
   </body>
 </html>
