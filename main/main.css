@@ -42,6 +42,14 @@ html {
   flex: 0 0 1000px;
 }
 
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between space-evenly;
+  order: 2;
+  flex: 0 0 20%;
+}
+
 a.header_link:link {
   color: #000000;
 }
