@@ -6,6 +6,11 @@ body {
   background-color : #0B0C10;
 }
 
+h1, h2, h3 {
+  color: #03E2D3;
+  font-family: helvetica;
+}
+
 p, ul, li {
   color: #C5C6C7;
   font-family: helvetica;
@@ -42,6 +47,7 @@ p, ul, li {
 .header_name {
   grid-row: 1 / 4;
   margin-top: auto;
+  text-decoration: none;
 }
 
 .header_nav_link {
@@ -69,6 +75,37 @@ p, ul, li {
   border-bottom-color : #1F2833;
 }
 
+.quotation {
+  font-size: 25px;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 10px;
+  color #CCC;
+  font-size: 2em;
+}
+
+.quotation:after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 10px;
+  color #CCC;
+  font-size: 2em;
+}
+
 div.work_box_container {
   margin: auto 15% auto 15%;
 }
@@ -90,24 +127,18 @@ a.resume_link:focus {
   background-color: #1F2833;
 }
 
-h1, h2, h3 {
-  color: #03E2D3;
-  font-family: helvetica;
-}
-
 a {
   font-family: helvetica;
   vertical-align: middle;
+  text-decoration: underline;
 }
 
 a:link {
   color: #C5C6C7;
-  text-decoration: none;
 }
 
 a:visited {
   color: #C5C6C7;
-  text-decoration: none;
 }
 
 a:hover {
