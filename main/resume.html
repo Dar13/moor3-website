@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Neil Moore's Resume</title>
   </head>
   <body>
     <div class="page_layout">
       <div class="header_container">
-        <div class="header_content">
-          <a href="index.html" class="header_name header_link"><h1 class="header_name">Neil Moore</h1></a>
-          <div class="header_nav">
-            <a href="resume.html" class="header_link"><p><b>Resume</b></p></a>
-            <a href="projects.html" class="header_link"><p>Projects</p></a>
-          </div>
+        <div class="header_layout">
+          <a href="index.html" class="header_name"><h1>Neil Moore</h1></a>
+	  <a href="resume.html" class="header_nav_link"><b>Resume</b></a>
+	  <a href="projects.html" class="header_nav_link">Projects</a>
+	  <a href="articles.html" class="header_nav_link">Articles</a>
         </div>
       </div>
       <div class="generic_main">
         <div style="text-align:center">
-          <a href="https://github.com/Dar13">GitHub Profile</a>
-          <a href="javascript:window.location.href=atob('bWFpbHRvOm4uYS5tb29yZUBvdXRsb29rLmNvbQ==')">Email</a>
+	  <a href="https://gitlab.com/Dar13" class="resume_link">GitLab</a>
+          <a href="javascript:window.location.href=atob('bWFpbHRvOm4uYS5tb29yZUBvdXRsb29rLmNvbQ==')" class="resume_link">Email</a>
+          <a href="https://github.com/Dar13" class="resume_link">GitHub</a>
         </div>
         <h2 class="generic_section_title">Summary</h2>
         <div class="work_box_container">
@@ -27,13 +28,13 @@
              stack, the better.</p>
           <p>I approach most things in life with the attitude of "do it right,
              do it light; do it wrong, do it long" and as such strive to do quality
-             work over lots of work. Whether it is at work or at the gym, I believe there is
-             little point in doing a task if you do it poorly.</p>
-          <p>Weightlifting and video games are the two main occupiers of my time outside
-             work with most of the gaming happening on PC (though there are some notable exceptions).</p>
+             work over lots of work. Whether it is at work or at the gym, I believe
+	     there is little point in doing a task if you do it poorly.</p>
+          <p>Weightlifting, gaming, and my personal projects occupy most of my
+	     time outside of work.</p>
         </div>
         <h2 class="generic_section_title">Experience</h2>
-        <!-- Don't forget to update this...(e.g. tenses, etc) -->
+        <!-- Don't forget to update this... (e.g. tenses, etc) -->
         <div class="work_box_container">
           <p><b>June 2016 - Present:</b> Software Engineer, Lockheed Martin Corporation</p>
           <ul>
@@ -53,13 +54,18 @@
         </div>
         <h2 class="generic_section_title">Personal Projects</h2>
         <div class="work_box_container">
-          <a href="https://github.com/Dar13/OpenMemDB"><p>OpenMemDB</p></a>
+	  <a href="https://gitlab.com/Dar13/scifi-tactics"><h4>Scifi Tactics (Working Title)</h4></a>
+	  <ul>
+	    <li>A tactics game in the vein of Tactics Ogre: Knight of Lodis or Final Fantasy Tactics, set in a near future or cyberpunk setting.</li>
+	    <li>Developed using Godot Engine for Linux with an MIT license</li>
+	  </ul>
+          <a href="https://github.com/Dar13/OpenMemDB"><h4>OpenMemDB</h4></a>
           <ul>
             <li>In-memory, non-blocking, and wait-free SQL database</li>
             <li>Developed in C++11 using the Tervel collection of wait-free data structures</li>
             <li>Was my Senior Design project at UCF</li>
           </ul>
-          <a href="https://github.com/Dar13/COP4331Project"><p>Over The Rhine</p></a>
+          <a href="https://github.com/Dar13/COP4331Project"><h4>Over The Rhine</h4></a>
           <ul>
             <li>Multiplayer-capable tower defense game for Android</li>
             <li>Written in Java using LibGDX and Kryonet</li>
@@ -70,11 +76,12 @@
         <div class="work_box_container">
           <ul>
             <li>Proficient in C99, C++/C++11, x86 Assembly</li>
-            <li>Familiar with Java and C#</li>
-            <li>Exposed to Bash, Python, JavaScript</li>
-            <li>Familiar with Git and DVCS concepts, have used Gitlab CE extensively</li>
+            <li>Familiar with Java and Python</li>
+            <li>Exposed to Bash, C#, JavaScript</li>
+	    <li>Proficient in Linux, is my primary operating system</li>
+            <li>Familiar with Git and DVCS concepts, have used GitLab extensively</li>
             <li>x86(-64) virtualization concepts and implementations</li>
-            <li>Designing, implementing and debugging multiprocessor algorithms</li>
+            <li>Designing, implementing and troubleshooting multiprocessor algorithms</li>
           </ul>
         </div>
         <h2 class="generic_section_title">Open Source Contributions</h2>
@@ -82,6 +89,7 @@
           <div class="">
             <ul>
               <li>Minor contributor to the Ethereum project (specifically the C++ implementation of the Ethereum client)</li>
+              <li>Minor contributor to the Godot game engine project (documentation and minor bugfixes)</li>
             </ul>
           </div>
         </div>

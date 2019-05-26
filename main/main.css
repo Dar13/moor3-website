@@ -2,12 +2,51 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  background-color : #0B0C10;
+}
+
+p, ul, li {
+  color: #C5C6C7;
+  font-family: helvetica;
+}
+
+.account {
+  margin-left: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.375;
+}
+
+.account_logo {
+  height: 32px;
+  vertical-align: middle;
+}
+
 .page_layout {
   display: grid;
   grid-template-columns: auto 1000px auto;
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   max-width: 100%;
+}
+
+.header_layout {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 1px;
+  height: 100%;
+}
+
+/* When adding new links to header, update the second value here */
+.header_name {
+  grid-row: 1 / 4;
+  margin-top: auto;
+}
+
+.header_nav_link {
+  grid-column: 2 / 3;
+  margin-top: auto;
 }
 
 .generic_main {
@@ -17,51 +56,64 @@ html {
 
 .generic_section_title {
   text-align: center;
+  border-bottom-style : solid;
+  border-bottom-width : 5px;
+  border-bottom-color : #1F2833;
 }
 
 .header_container {
   grid-column: 2 / 3;
   grid-row: 1;
-}
-
-.header_name {
-  order: 0;
-  flex-grow: 2;
-  align-self: flex-start;
-}
-
-.header_item {
-  margin-right:10px;
-  margin-left: 10px;
-  align-self: flex-end;
-}
-
-.header_content {
-  display: flex;
-  flex-flow: row nowrap;
-  flex: 0 0 1000px;
-}
-
-.header_nav {
-  display: flex;
-  flex-direction: row;
-  place-content: space-between space-evenly;
-  order: 2;
-  flex: 0 0 20%;
-}
-
-a.header_link:link {
-  color: #000000;
-}
-
-a.header_link:visited {
-  color: #000000;
-}
-
-a.header_link:hover {
-  color: #000000;
+  border-bottom-style : solid;
+  border-bottom-width : 5px;
+  border-bottom-color : #1F2833;
 }
 
 div.work_box_container {
-  margin: auto 20% auto 20%;
+  margin: auto 15% auto 15%;
+}
+
+a.resume_link {
+  display: inline-block;
+  background-color: #1F2833;
+  width: 10%;
+  text-align:center;
+  border-radius: 6px;
+  padding-top: 2px;
+}
+
+a.resume_link:hover {
+  background-color: #1F2833;
+}
+
+a.resume_link:focus {
+  background-color: #1F2833;
+}
+
+h1, h2, h3 {
+  color: #03E2D3;
+  font-family: helvetica;
+}
+
+a {
+  font-family: helvetica;
+  vertical-align: middle;
+}
+
+a:link {
+  color: #C5C6C7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #C5C6C7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #45A29E;
+}
+
+a:focus {
+  color: #45A29E;
 }
